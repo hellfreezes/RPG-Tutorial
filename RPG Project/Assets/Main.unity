@@ -18,8 +18,8 @@ RenderSettings:
   m_FogColor: {r: 0.53333336, g: 1, b: 0.5137255, a: 0}
   m_FogMode: 1
   m_FogDensity: 0.02
-  m_LinearFogStart: 20
-  m_LinearFogEnd: 30
+  m_LinearFogStart: 30
+  m_LinearFogEnd: 40
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
@@ -3227,6 +3227,7 @@ GameObject:
   - component: {fileID: 1462424824}
   - component: {fileID: 1462424823}
   - component: {fileID: 1462424827}
+  - component: {fileID: 1462424828}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -3306,6 +3307,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6bca6df45227d1d428c77cd48c542aca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementMask:
+    serializedVersion: 2
+    m_Bits: 256
+--- !u!114 &1462424828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1462424822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfbabaafca551024993c396db0043889, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &1494045637 stripped
@@ -3947,6 +3962,7 @@ GameObject:
   - component: {fileID: 1728564188}
   - component: {fileID: 1728564187}
   - component: {fileID: 1728564192}
+  - component: {fileID: 1728564193}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -4036,6 +4052,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   profile: {fileID: 11400000, guid: bc7ef57070e716341add7384478da609, type: 2}
+--- !u!114 &1728564193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1728564186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aaf0807f08115174483b232427488193, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1462424826}
+  offset: {x: 0, y: -1, z: -1}
+  zoomSpeed: 4
+  minZoom: 5
+  maxZoom: 15
+  yawSpeed: 100
+  pitch: 2
 --- !u!4 &1730976881 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4002246828333360, guid: a5b6531bd8601e34ea81fc1e43782119,
