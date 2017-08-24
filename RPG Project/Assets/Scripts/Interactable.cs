@@ -41,6 +41,7 @@ public class Interactable : MonoBehaviour {
         hasInteract = false;
     }
 
+    //Сервисная функция
     private void OnDrawGizmosSelected()
     {
         if (interactionTransform == null)

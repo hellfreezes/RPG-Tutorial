@@ -9,8 +9,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 423e45407e8451244a1b1a7d0932619e, type: 3}
-  m_Name: Test Item
+  m_Name: HelmOfMight
   m_EditorClassIdentifier: 
-  name: Helment of Protection
-  icon: {fileID: 0}
+  name: Helm of Might
+  icon: {fileID: 21300000, guid: 81bdfc498418cf64fa1416eb6c48413b, type: 3}
   isDafaultItem: 0

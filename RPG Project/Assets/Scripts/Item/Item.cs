@@ -5,4 +5,10 @@ public class Item : ScriptableObject {
     new public string name = "New Item";
     public Sprite icon = null;
     public bool isDafaultItem = false;
+
+    public virtual void Use()
+    {
+        //Скрипт использования вещи
+        Debug.Log("Using " + name);
+    }
 }

@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using UnityEngine.EventSystems;
 using UnityEngine;
 
 [RequireComponent(typeof(PlayerMotor))]
@@ -18,6 +17,9 @@ public class PlayerController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        if (EventSystem.current.IsPointerOverGameObject())
+            return; //Предотвращает отдачу команд сквозь графический интерфейс
+                    //Всё, что ниже не будет работать если мышь находится над графическим интерфейсом
         //Ловим нажатие левой кл мыши
 		if (Input.GetMouseButtonDown(0))
         {
